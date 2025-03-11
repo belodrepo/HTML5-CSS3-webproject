@@ -4,12 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
     <!--SEO eszközök-->
     <meta name="author" content="Gipsz Jakab">
     <meta name="description" content="HTML5-CSS3 Weboldal projekt">
     <meta name="keywords" content="HTML5, CSS3, CSS animáció, Javascript, Webform, képgaléria">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/gallery.css">
+
+    <script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <script type="text/javascript" src="/fancybox/jquery.easing-1.3.pack.js"></script>
+    <script type="text/javascript" src="/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/fancybox-effects.js"></script>
     <title>HTML5 - CSS3 - Webproject</title>
 </head>
 
@@ -46,46 +53,51 @@
         </nav>
         <section>
             <h2>&#171;section&#187;</h2>
-            <article> 
-            <h2>&#171;képgaléria&#187;</h2>
-<div class="gallery">
-    <figure class="item">
-        <a href="gallery-images/Autumn Leaves.jpg"><img src="gallery-images/Autumn Leaves.jpg" alt="Őszi levelek"></a>
-        <figcaption class="caption">Őszi levelek</figcaption>
-    </figure>
-    <figure class="item">
-        <a href="gallery-images/Chrysanthemum.jpg"><img src="gallery-images/Chrysanthemum.jpg" alt="Krizantém"></a>
-        <figcaption class="caption">Krizantém</figcaption>
-    </figure>
-    <figure class="item">
-        <a href="gallery-images/Creek.jpg"><img src="gallery-images/Creek.jpg" alt="Patak"></a>
-        <figcaption class="caption">Patak</figcaption>
-    </figure>
-    <figure class="item">
-        <a href="gallery-images/Desert Landscape.jpg"><img src="gallery-images/Desert Landscape.jpg" alt="Sívatagi táj"></a>
-        <figcaption class="caption">Sívatagi táj</figcaption>
-    </figure>
-    <figure class="item">
-        <a href="gallery-images/Desert.jpg"><img src="gallery-images/Desert.jpg" alt="Sívatag"></a>
-        <figcaption class="caption">Sívatag</figcaption>
-    </figure>
-    <figure class="item">
-        <a href="gallery-images/Dock.jpg"><img src="gallery-images/Dock.jpg" alt="Kikötő"></a>
-        <figcaption class="caption">Kikötő</figcaption>
-    </figure>
-    <figure class="item">
-        <a href="gallery-images/Forest Flowers.jpg"><img src="gallery-images/Forest Flowers.jpg" alt="Erdei virágok"></a>
-        <figcaption class="caption">Erdei virágok</figcaption>
-    </figure>
-    <figure class="item">
-        <a href="gallery-images/Forest.jpg"><img src="gallery-images/Forest.jpg" alt="Erdő"></a>
-        <figcaption class="Erdő">Krizantém</figcaption>
-    </figure>
-    <figure class="item">
-        <a href="gallery-images/Frangipani Flowers.jpg"><img src="gallery-images/Frangipani Flowers.jpg" alt="Frangipáni virágok"></a>
-        <figcaption class="caption">Frangipáni virágok</figcaption>
-    </figure>
-</div>
+            <article>
+                <h2>&#171;képgaléria&#187;</h2>
+                <div class="gallery">
+                    <figure class="item">
+                        <a id="example1" href="gallery-images/Autumn Leaves.jpg"><img src="gallery-images/Autumn Leaves.jpg"
+                                alt="Őszi levelek"></a>
+                        <figcaption class="caption">Őszi levelek</figcaption>
+                    </figure>
+                    <figure class="item">
+                        <a id="example2" href="gallery-images/Chrysanthemum.jpg"><img src="gallery-images/Chrysanthemum.jpg"
+                                alt="Krizantém"></a>
+                        <figcaption class="caption">Krizantém</figcaption>
+                    </figure>
+                    <figure class="item">
+                        <a id="example3" href="gallery-images/Creek.jpg"><img src="gallery-images/Creek.jpg" alt="Patak"></a>
+                        <figcaption class="caption">Patak</figcaption>
+                    </figure>
+                    <figure class="item">
+                        <a href="gallery-images/Desert Landscape.jpg"><img src="gallery-images/Desert Landscape.jpg"
+                                alt="Sívatagi táj"></a>
+                        <figcaption class="caption">Sívatagi táj</figcaption>
+                    </figure>
+                    <figure class="item">
+                        <a href="gallery-images/Desert.jpg"><img src="gallery-images/Desert.jpg" alt="Sívatag"></a>
+                        <figcaption class="caption">Sívatag</figcaption>
+                    </figure>
+                    <figure class="item">
+                        <a href="gallery-images/Dock.jpg"><img src="gallery-images/Dock.jpg" alt="Kikötő"></a>
+                        <figcaption class="caption">Kikötő</figcaption>
+                    </figure>
+                    <figure class="item">
+                        <a href="gallery-images/Forest Flowers.jpg"><img src="gallery-images/Forest Flowers.jpg"
+                                alt="Erdei virágok"></a>
+                        <figcaption class="caption">Erdei virágok</figcaption>
+                    </figure>
+                    <figure class="item">
+                        <a href="gallery-images/Forest.jpg"><img src="gallery-images/Forest.jpg" alt="Erdő"></a>
+                        <figcaption class="Erdő">Krizantém</figcaption>
+                    </figure>
+                    <figure class="item">
+                        <a href="gallery-images/Frangipani Flowers.jpg"><img src="gallery-images/Frangipani Flowers.jpg"
+                                alt="Frangipáni virágok"></a>
+                        <figcaption class="caption">Frangipáni virágok</figcaption>
+                    </figure>
+                </div>
             </article>
         </section>
     </div>
